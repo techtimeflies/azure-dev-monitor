@@ -1,6 +1,8 @@
 from zeus import request_builder as rb
+from zeus import config
 
 def test_request():
-    assert(rb.request_ok(rb.get('https://www.google.com')))
+    parser = config.parser
+    assert(rb.request_ok(rb.get(parser["DEFAULT"]["URL"])))
 
     
