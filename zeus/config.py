@@ -6,39 +6,66 @@ from configparser import ConfigParser
 from pathlib import Path
 import os
 
+class Config():
 
-config_file='zeus.ini'
-CONFIG_PATHS=[
-    os.path.join(str(Path.home()), config_file),
-    os.path.join(os.getcwd(), config_file)
-]
+    instance = None
+    config_file='zeus.ini'
 
-def get_config():
-    '''return the first config file found'''
+    @classmethod
+    def getInstance(cls):
+        if cls.instance is None:
+            cls.instance = AppConfig()
 
-    files = [x for x in CONFIG_PATHS if os.path.exists(x)]
+        return cls.instance
+        
+    def __init__(self):
+        
+        #paths to check for the config file
+        self.CONFIG_PATHS=[
+            os.path.join(str(Path.home()), self.config_file),
+            os.path.join(os.getcwd(), self.config_file)
+        ]
 
-    if files is None or len(files) == 0: return None
+        #exit if there is no config file found
+        if not self.config_exists():
+            return
 
-    return files[0]
-    
-def config_exists():
-    return get_config() is not None
+        #make the config parser available for other functions
+        self.parser = ConfigParser()
+        self.parser.read(self.get_config())
+        
 
-def get_setting(section="DEFAULT", my_setting=None):
+    def get_config(self):
+        '''return the first config file found'''
 
-    if my_setting is None: return
+        files = [x for x in self.CONFIG_PATHS if os.path.exists(x)]
 
-    parser = ConfigParser()
-    parser.read(get_config())
-    try:        
-        ret = parser.get(section, my_setting)
-    except Exception:
-        ret = None
-    return ret
+        if files is None or len(files) == 0: return None
 
-def get_default_setting(my_setting):
-    if my_setting is None: return
+        return files[0]
+        
+    def config_exists(self):
+        '''check if the config exists'''
+        
+        return self.get_config() is not None
 
-    return get_setting("DEFAULT", my_setting)
+    def get_setting(self, section="DEFAULT", my_setting=None):
+        '''get a value from the config'''
 
+        if my_setting is None: return
+
+        try:        
+            ret = self.parser.get(section, my_setting)
+        except Exception:
+            ret = None
+        return ret
+
+    def get_default_setting(self, my_setting):
+        '''get a default value from the config'''
+        
+        if my_setting is None: return
+
+        return self.get_setting("DEFAULT", my_setting)
+
+def get_instance():
+    return Config()

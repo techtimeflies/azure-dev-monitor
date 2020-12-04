@@ -1,17 +1,21 @@
 from zeus import config
 import pytest
 
-def test_config_exists():
-    assert config.config_exists()
+class TestConfig():
+    def setup_class(cls):
+        cls.cnf=config.get_instance()
 
-def test_get_config():
-    assert config.get_config() is not None
-    assert len(config.get_config()) > 0
+    def test_config_exists(self):
+        assert self.cnf.config_exists()
+
+    def test_get_config(self):
+        assert self.cnf.get_config() is not None
+        assert len(self.cnf.get_config()) > 0
 
 
-def test_read_default_setting():
-    assert config.get_default_setting("URL") is not None
+    def test_read_default_setting(self):
+        assert self.cnf.get_default_setting("URL") is not None
 
 
-def test_read_setting():
-    assert config.get_setting("API_VERSION", "DEFAULT") is not None
+    def test_read_setting(self):
+        assert self.cnf.get_setting("API_VERSION", "DEFAULT") is not None
