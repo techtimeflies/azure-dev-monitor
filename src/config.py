@@ -9,7 +9,7 @@ import os
 class Config():
 
     instance = None
-    config_file='zeus.ini'
+    config_file='azuredevpy.ini'
 
     @classmethod
     def getInstance(cls):
