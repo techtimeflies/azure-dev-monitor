@@ -1,5 +1,5 @@
-from zeus import request_builder as rb
-from zeus import config
+from src import request_builder as rb
+from src import config
 import pytest
 
 class TestConfig():

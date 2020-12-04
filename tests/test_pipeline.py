@@ -1,6 +1,6 @@
-from zeus import request_builder as rb
-from zeus import config
-from zeus.resources import pipeline
+from src import request_builder as rb
+from src import config
+from src.resources import pipeline
 import pytest
 
 class TestConfig():

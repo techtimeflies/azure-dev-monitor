@@ -1,4 +1,4 @@
-from zeus import config
+from src import config
 import pytest
 
 class TestConfig():

@@ -1,5 +1,5 @@
-from zeus.resources.base_resource import Resource
-from zeus import config, request_builder as rb
+from src.resources.base_resource import Resource
+from src import config, request_builder as rb
 
 class Pipeline(Resource):
 

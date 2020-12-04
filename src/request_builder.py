@@ -1,6 +1,6 @@
 """Class specific for handling requests"""
 
-from zeus import config
+from src import config
 import requests
 
 cnf = config.get_instance()
