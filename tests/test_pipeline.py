@@ -3,9 +3,11 @@ from azuredevmonitor import config
 from azuredevmonitor.resources import pipeline
 import pytest
 
-class TestConfig():
+class TestConfig:
+
+    @classmethod
     def setup_class(cls):
-        cls.cnf=config.get_instance()
+        cls.cnf = config.get_instance()
 
     def test_list_pipeline(self):
 

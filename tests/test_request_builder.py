@@ -2,9 +2,11 @@ from azuredevmonitor import request_builder as rb
 from azuredevmonitor import config
 import pytest
 
-class TestConfig():
+class TestConfig:
+
+    @classmethod
     def setup_class(cls):
-        cls.cnf=config.get_instance()
+        cls.cnf = config.get_instance()
 
     @pytest.mark.skip
     def test_request(self):

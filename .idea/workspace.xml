@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a28d601-99ed-4a47-bf34-5f7765eff126" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/azuredevmonitor/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuredevmonitor/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azuredevmonitor/request_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuredevmonitor/request_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azuredevmonitor/resources/base_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuredevmonitor/resources/base_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azuredevmonitor/resources/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuredevmonitor/resources/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_request_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_request_builder.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lIj6ItTOgPEdjB0ZZRwE7Oq5kn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a28d601-99ed-4a47-bf34-5f7765eff126" name="Default Changelist" comment="" />
+      <created>1607291322972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607291322972</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="567" y="126" key="SettingsEditor" timestamp="1607291699164">
+      <screen x="0" y="0" width="3840" height="1040" />
+    </state>
+    <state x="567" y="126" key="SettingsEditor/0.0.3840.1040@0.0.3840.1040" timestamp="1607291699164" />
+  </component>
+</project>
