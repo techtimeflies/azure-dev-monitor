@@ -1,6 +1,6 @@
 """Class specific for handling requests"""
 
-from src import config
+from azuredevmonitor import config
 import requests
 
 cnf = config.get_instance()

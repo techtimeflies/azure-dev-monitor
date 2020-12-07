@@ -1,5 +1,5 @@
-from src.resources.base_resource import Resource
-from src import config, request_builder as rb
+from azuredevmonitor.resources.base_resource import Resource
+from azuredevmonitor import config, request_builder as rb
 
 class Pipeline(Resource):
 

@@ -1,5 +1,5 @@
-from src import request_builder as rb
-from src import config
+from azuredevmonitor import request_builder as rb
+from azuredevmonitor import config
 import pytest
 
 class TestConfig():

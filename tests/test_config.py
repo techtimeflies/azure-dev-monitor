@@ -1,4 +1,4 @@
-from src import config
+from azuredevmonitor import config
 import pytest
 
 class TestConfig():

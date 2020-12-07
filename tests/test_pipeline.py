@@ -1,6 +1,6 @@
-from src import request_builder as rb
-from src import config
-from src.resources import pipeline
+from azuredevmonitor import request_builder as rb
+from azuredevmonitor import config
+from azuredevmonitor.resources import pipeline
 import pytest
 
 class TestConfig():
