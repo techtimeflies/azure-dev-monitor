@@ -11,6 +11,6 @@ class TestConfig:
 
     def test_list_pipeline(self):
 
-        r=pipeline.get_instance().get_list()
+        r = pipeline.get_instance().get_list()
         assert r.status_code == 200
         assert len(r.json()) > 0
