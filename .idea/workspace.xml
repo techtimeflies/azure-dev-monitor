@@ -11,13 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a28d601-99ed-4a47-bf34-5f7765eff126" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/azuredevmonitor/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuredevmonitor/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azuredevmonitor/request_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuredevmonitor/request_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azuredevmonitor/resources/base_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuredevmonitor/resources/base_resource.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/azuredevmonitor/resources/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/azuredevmonitor/resources/pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_request_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_request_builder.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

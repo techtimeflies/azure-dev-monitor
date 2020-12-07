@@ -3,7 +3,7 @@ from azuredevmonitor import config, request_builder as rb
 
 class Pipeline(Resource):
 
-    cnf=config.get_instance()
+    cnf = config.get_instance()
 
     def __init__(self):
         super().__init__("pipelines", self.cnf.get_setting("API VERSION", "DEFAULT"))
