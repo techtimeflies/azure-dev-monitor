@@ -5,11 +5,13 @@ Makes it easy to read a config file
 from configparser import ConfigParser
 from pathlib import Path
 import os
+import logging
 
 class Config:
 
     instance = None
     config_file = 'azuredevmonitor.ini'
+    log_dir = os.path.join(os.getcwd(), "logs")
 
     @classmethod
     def get_instance(cls):
@@ -17,7 +19,7 @@ class Config:
             cls.instance = Config()
 
         return cls.instance
-        
+
     def __init__(self):
         
         # paths to check for the config file
@@ -33,6 +35,32 @@ class Config:
         # make the config parser available for other functions
         self.parser = ConfigParser()
         self.parser.read(self.get_config())
+
+        self.configure_logging()
+
+    def configure_logging(self):
+        logger = logging.getLogger('azuredevmonitor')
+        logger.setLevel(logging.DEBUG)
+        # create file handler which logs even debug messages
+
+        try:
+            os.mkdir(self.log_dir)
+        except Exception:
+            pass
+
+        fh = logging.FileHandler(os.path.join(self.log_dir, self.get_setting("LOGGING", "FILE_NAME")))
+        fh.setLevel(self.get_setting("LOGGING", "LEVEL"))
+        # create console handler with a higher log level
+        ch = logging.StreamHandler()
+        ch.setLevel(logging.ERROR)
+
+        # create formatter and add it to the handlers
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        fh.setFormatter(formatter)
+        ch.setFormatter(formatter)
+        # add the handlers to the logger
+        logger.addHandler(fh)
+        logger.addHandler(ch)
 
     def get_config(self):
         """return the first config file found"""
