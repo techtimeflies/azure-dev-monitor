@@ -26,7 +26,7 @@ class Pipeline(Resource):
         
     def enumerate_pipelines(self, data):
         for x in data:
-            self.logger.info(f"id:{x['id']}, name:{x['name']}")
+            self.logger.info(f"id:{x['id']}, name:{x['name']}, url:{x['url']}")
 
 def get_instance():
     return Pipeline()
